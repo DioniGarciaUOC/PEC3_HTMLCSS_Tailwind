@@ -2,40 +2,147 @@
 
 <html>
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" />
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="./assets/styles/main.scss"
-        />
-        <!-- do not remove this line! -->
-        <title>UOC Boilerplate</title>
+        <link rel="stylesheet" href="./assets/styles/main.scss" />
     </head>
-    <body>
-        <div class="uoc-container">
-            <picture>
-                <source
-                    srcset="./assets/images/logo.png?as=webp&width=350"
-                    type="image/webp"
-                />
-                <img
-                    src="./assets/images/logo.png?width=350"
-                    alt="Universitat Oberta de Catalunya"
-                    class="uoc-logo"
-                />
-            </picture>
-            <!--<h1 class="uoc-title">Hello, UOC!</h1>-->
 
-            <h1 class="text-4xl font-bold underline">Hello world!</h1>
-            <p>
-                This is a starter template for the Advanced HTML and CSS Tools
-                courses from the Master's Program in Multimedia Applications and
-                the Master's Program in Web App and Website Development at the
-                Universitat Oberta de Catalunya.
-            </p>
+    <body class="bg-fixed bg-industrial">
+        <div class="font-nunito">
+            <include src="./views/navbar.html"></include>
+
+            <main
+                class="blog-container w-full sm:w-4/5 mx-auto flex justify-center align-center flex-col bg-metalic-skin"
+            >
+                <div class="w-full mb-14">
+                    <div
+                        class="flex flex-col justify-center w-full right-0 h-96 relative"
+                    >
+                        <h1
+                            class="text-5xl text-white text-center mx-auto inset-0 top-24 absolute"
+                        >
+                            Un poco de historia
+                        </h1>
+                        <h2
+                            class="text-2xl text-white text-center blog-header-text-subtitle inset-0 top-44 absolute"
+                        >
+                            By Dj Rembrandt
+                        </h2>
+
+                        <img
+                            src="./assets/images/rave-attack2.jpg"
+                            alt="Imagen de blog: gente de fiesta"
+                            class="w-full h-96 object-cover"
+                        />
+                    </div>
+                </div>
+
+                <div class="blog-content px-4 md:px-24">
+                    <div class="blog-content-section">
+                        <span
+                            class="blog-content-section-title text-3xl block mb-10"
+                            >Un festival que surgió casi por accidente y que
+                            saborea el éxito desde su primera edición</span
+                        ><br />
+
+                        <span class="blog-content-section-text">
+                            Fue en las fiestas de San Pascual de 2010 cuando se
+                            celebró la primera edición de Rave Attack, un primer
+                            viernes de fiestas del pueblo. La peña 'Beu i Fuig'
+                            tuvo problemas técnicos para poder celebrar un
+                            cartel importante de dj's invitados y en Fem Festa
+                            recibimos de urgencia equipamiento de audio, bebida
+                            y los medios necesarios para celebrar el evento que
+                            nuestros compañeros no podian. Sin duda fue toda una
+                            experiencia de hermanor y fiesta que ha fijado un
+                            punto referente en cómo gestionar eventos musicales
+                            en Vila-real.
+                        </span>
+                    </div>
+
+                    <hr class="my-8" />
+
+                    <div class="blog-content-section">
+                        <blockquote>
+                            <p>
+                                La visita a Fem Festa tanto en las fiestas de
+                                San Pascual (mayo) como en las fiestas de Virgen
+                                de Gracia (septiembre) es siempre sinónimo de
+                                reencuentro de generaciones y grupos de juventud
+                                de Vila-real. En cuestión de minutos se puede
+                                liar una muy épica en el local.
+                            </p>
+                        </blockquote>
+                    </div>
+
+                    <hr class="my-8" />
+
+                    <div class="blog-content-section row-flex mb-8">
+                        <span class="blog-content-section-title">
+                            Un poco de historia sobre Fem Festa
+                        </span>
+
+                        <span class="blog-content-section-text"
+                            >Fundada en 1990 por un grupo de jóvenes estudiantes
+                            y recién iniados algunos en sus carreras
+                            profesionales, en la actualidad cuenta con más de 50
+                            socios. En la peña celebramos todo tipo de eventos
+                            como cumpleaños, despedidas de solteros y como no,
+                            las semanas de festividades de Vila-real.
+                        </span>
+                    </div>
+
+                    <div class="blog-content-section">
+                        <img
+                            src="./assets/images/smoke-club.jpg"
+                            alt="Imagen de blog: gente de fiesta 2"
+                            class="blog-content-image"
+                        />
+                    </div>
+
+                    <hr class="my-8 text-dark-gray" />
+
+                    <div class="blog-content-section">
+                        <span class="blog-content-section-text"
+                            >Puedes celebrar tus eventos en Fem Festa si
+                            contactas con nosotros y tenemos disponibilidad de
+                            apertura. Algunas opciones que te ofrecemos son:
+                            <br /><br />
+                            <ul class="mb-8">
+                                <li class="list-disc list-inside">
+                                    Apertura del local en horario permitido
+                                </li>
+                                <li class="list-disc list-inside">
+                                    Servicio de barra
+                                </li>
+                                <li class="list-disc list-inside">
+                                    Acompañamiento / Vigilancia
+                                </li>
+                                <li class="list-disc list-inside">
+                                    Contratación de cátering
+                                </li>
+                                <li class="list-disc list-inside">
+                                    Contratación de decoración especial
+                                </li>
+                                <li class="list-disc list-inside">
+                                    Contratación de equipamiento audiovisual
+                                    extra
+                                </li>
+                            </ul>
+
+                            <p class="mb-8">
+                                Coméntanos tus necesidades y te elaboraremos un
+                                presupuesto ajustado de forma personalizada.
+                            </p>
+                        </span>
+                    </div>
+                </div>
+
+                <br />
+                <br />
+            </main>
+
+            <include class="footer" src="./views/footer.html"></include>
         </div>
-        <include src="./views/footer.html"></include>
+
         <script type="module" src="./assets/scripts/main.js"></script>
         <!-- do not remove this line! -->
     </body>

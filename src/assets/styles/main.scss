@@ -20,6 +20,8 @@
 // @import "some-node-module";
 // @import "@some-company/some-node-module";
 
+@import "npm:@fortawesome/fontawesome-free/css/all.css";
+
 /**
  * Import layouts
  * It's a best practice to use a different partial for each page
@@ -27,6 +29,17 @@
 
 @import "layouts/home";
 @tailwind utilities;
+
+/*@font-face {
+  font-family: "Nunito";
+  src: url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+}*/
+
+/*@layer components {
+  .card {
+    @apply bg-gray-400 relative w-full h-0 shadow;
+  }
+}*/
 
 /**
  * Do NOT include anything else in this file!
