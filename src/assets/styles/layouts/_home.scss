@@ -10,6 +10,10 @@
   .card {
     @apply bg-dark-gray text-white w-80 m-6 rounded border-2 border-dark-gray;
   }
+
+  .img-card {
+    @apply h-52 object-cover w-full;
+  }
 }
 
 .t-shadow {
